@@ -5,6 +5,7 @@
 ### [Project Page](https://xhuangcv.github.io/MaterialAnythingF/) |   [Paper]()  | [Video]()
 
 https://github.com/user-attachments/assets/a3cb8213-e767-4972-861a-e15d08e14823
+
 Material Anything:</b> A PBR material generation model for various 3D meshes, including <span style="color: #4E95D9;">texture-less</span>, <span style="color: #F2AA84;">albedo-only</span>, <span style="color: #8ED973;">generated</span>, and <span style="color: #D86ECC;">scanned</span> objects.
 
 ## Abstract
