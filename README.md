@@ -2,7 +2,7 @@
 
 
 
-### [Project Page](https://xhuangcv.github.io/MaterialAnythingF/) |   [Paper]()  | [Video]()
+### [Project Page](https://xhuangcv.github.io/MaterialAnything/) |   [Paper]()
 
 https://github.com/user-attachments/assets/a3cb8213-e767-4972-861a-e15d08e14823
 
