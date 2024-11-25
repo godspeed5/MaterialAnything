@@ -41,7 +41,7 @@ If you find this work helpful for your research, please cite:
 @article{huang2024materialanything,
   author = {Huang, Xin and Wang, Tengfei and Liu, Ziwei and Wang, Qing},
   title = {Material Anything: Generating Materials for Any 3D Object via Diffusion},
-  journal = {arXiv},
+  journal = {arXiv preprint arXiv:2411.15138},
   year = {2024}
   }
 ```
