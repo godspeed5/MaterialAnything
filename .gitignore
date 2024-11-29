@@ -9,5 +9,5 @@ __pycache__
 .ipynb_checkpoints/
 .vscode/
 dataset/outputs
-render_script/rendered_uid.txt
-render_script/timeout_uid.txt
+rendering_scripts/rendered_uid.txt
+rendering_scripts/timeout_uid.txt
