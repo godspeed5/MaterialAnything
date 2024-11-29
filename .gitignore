@@ -1,0 +1,13 @@
+logs/
+outputs/
+*.egg-info
+__pycache__
+*.zip
+*.ckpt
+*.mp4
+*.pth
+.ipynb_checkpoints/
+.vscode/
+dataset/outputs
+render_script/rendered_uid.txt
+render_script/timeout_uid.txt

@@ -1,0 +1,5 @@
+numpy
+megfile
+wandb
+tqdm
+tyro==0.3.38

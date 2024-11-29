@@ -8,6 +8,84 @@ https://github.com/user-attachments/assets/a3cb8213-e767-4972-861a-e15d08e14823
 
 Material Anything:</b> A PBR material generation model for various 3D meshes, including <span style="color: #4E95D9;">texture-less</span>, <span style="color: #F2AA84;">albedo-only</span>, <span style="color: #8ED973;">generated</span>, and <span style="color: #D86ECC;">scanned</span> objects.
 
+
+Here’s the polished version of your README:
+
+---
+
+## Material3D Dataset  
+
+**Material3D** consists of over 80,000 3D objects with material maps curated from [Objaverse](https://objaverse.allenai.org/). The object IDs and Blender scripts are publicly available. Additionally, prompts from [3DTopia](https://github.com/3DTopia/3DTopia) and [Cap3D](https://cap3d-um.github.io/) are also provided.  
+
+---
+
+### Install Blender  
+
+Our Blender scripts are based on **Blender 3.2.2**. While newer Blender versions have been tested, some node names have changed, which may cause compatibility issues. It is recommended to install Blender 3.2.2.  
+
+```bash
+# Download Blender 3.2.2
+wget https://download.blender.org/release/Blender3.2/blender-3.2.2-linux-x64.tar.xz
+tar -xf blender-3.2.2-linux-x64.tar.xz
+rm blender-3.2.2-linux-x64.tar.xz
+
+# Add Blender to PATH in ~/.bashrc
+export PATH="/path/to/blender-folder:$PATH"
+
+# Refresh the environment variables
+source ~/.bashrc
+```
+
+---
+
+### Material Rendering  
+
+The following commands can be used to render material maps:  
+
+#### Render Multi-view Material Maps  
+```bash
+blender -b -P ./rendering_scripts/blender_script_material.py -- \
+    --object_path "./my_object.glb" \
+    --output_dir './dataset/outputs' \
+    --render_space 'VIEW'
+```
+
+#### Render UV-space Material Maps  
+```bash
+blender -b -P ./rendering_scripts/blender_script_material.py -- \
+    --object_path "./my_object.glb" \
+    --output_dir './dataset/outputs' \
+    --render_space 'UV'
+```
+
+---
+
+### Distributed Material Rendering  
+
+For large-scale rendering, we provide a distributed rendering script. You can modify it based on your dataset and system configuration.  
+
+#### Example Usage:  
+```bash
+python rendering_scripts/distributed_render.py \
+    --timeout 3600 \
+    --num_gpus 8 \
+    --workers_per_gpu 12 \
+    --input_models_path './models_path_all.json' \
+    --resolution 512 \
+    --render_space 'VIEW'
+```
+
+---
+
+### Notes  
+
+- Ensure that the Blender binary path is correctly added to your `PATH` environment variable before executing any scripts.  
+- For distributed rendering, adjust the `--num_gpus`, `--workers_per_gpu`, and `--timeout` parameters based on your hardware setup.  
+- Use the `--render_space` flag to specify whether to render in `VIEW` or `UV` space.  
+
+---
+
+
 ## Abstract
 >We present <b>Material Anything</b>, a fully-automated, 
 unified diffusion framework designed to generate physically-based materials for 3D objects. 
