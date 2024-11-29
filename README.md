@@ -10,9 +10,9 @@ Material Anything:</b> A PBR material generation model for various 3D meshes, in
 
 ---
 
-## Material3D Dataset  
+## Material3D Dataset (Newly Updated) 
 
-**Material3D** consists of over 80,000 3D objects with material maps curated from [Objaverse](https://objaverse.allenai.org/). The object IDs and Blender scripts are publicly available. Additionally, prompts from [3DTopia](https://github.com/3DTopia/3DTopia) and [Cap3D](https://cap3d-um.github.io/) are also provided.  
+**Material3D** consists of over 80,000 3D objects with material maps curated from [Objaverse](https://objaverse.allenai.org/). The object IDs and Blender scripts are publicly available (see `dataset` and `rendering_scripts` folders). Additionally, prompts from [3DTopia](https://github.com/3DTopia/3DTopia) and [Cap3D](https://cap3d-um.github.io/) are also provided.  
 
 ---
 
