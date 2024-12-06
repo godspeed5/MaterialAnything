@@ -9,10 +9,15 @@ https://github.com/user-attachments/assets/a3cb8213-e767-4972-861a-e15d08e14823
 Material Anything:</b> A PBR material generation model for various 3D meshes, including <span style="color: #4E95D9;">texture-less</span>, <span style="color: #F2AA84;">albedo-only</span>, <span style="color: #8ED973;">generated</span>, and <span style="color: #D86ECC;">scanned</span> objects.
 
 ---
+## News
 
+- [2024.12] Release [Material3D Dataset](dataset/) and the [rendering script](rendering_scripts/).
 ## Material3D Dataset (Newly Updated) 
 
-**Material3D** consists of over 80,000 3D objects with material maps curated from [Objaverse](https://objaverse.allenai.org/). The object IDs and Blender scripts are publicly available (see `dataset` and `rendering_scripts` folders). Additionally, prompts from [3DTopia](https://github.com/3DTopia/3DTopia) and [Cap3D](https://cap3d-um.github.io/) are also provided.  
+**Material3D** consists of 80K+ curated 3D objects with high-quality material maps and annotated text descriptions.  
+- [Object List](dataset/material3d.json) gives IDs for curated 3D objects in Objaverse.   
+- [Caption List](https://github.com/3DTopia/3DTopia/releases/download/data/3DTopia-objaverse-caption-361k.json) gives corresponding text descriptions of the 3D objects.   
+- [Render Script](rendering_scripts) gives Blender scripts that render 3D objects into material view-maps and material UV-maps. Refer to the following instructions for the rendering.
 
 ---
 
