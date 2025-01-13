@@ -40,6 +40,10 @@ source ~/.bashrc
 
 ---
 
+### Issues with Blender install (especially on runpod)
+
+refer https://github.com/princeton-vl/infinigen/issues/28
+
 ### Material Rendering  
 
 The following commands can be used to render material maps:  
